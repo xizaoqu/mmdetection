@@ -5,10 +5,11 @@ from argparse import ArgumentParser
 # from mmdet.apis import (async_inference_detector, inference_detector,
 #                         init_detector, show_result_pyplot)
 
-sys.path.append("/home/xiaozeqi/mmdetection")
+
 
 import sys 
 print(sys.path)
+sys.path.append("/home/xiaozeqi/mmdetection")
 
 from mmdet.apis import (async_inference_detector, inference_detector,
                         init_detector)
