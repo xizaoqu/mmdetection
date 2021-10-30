@@ -8,7 +8,7 @@ from argparse import ArgumentParser
 from mmdet.apis import (async_inference_detector, inference_detector,
                         init_detector)
 import sys 
-sys.path.append("..")
+sys.path.append("/home/xiaozeqi/mmdetection")
 print(sys.path)
 from mmdet2.apis import show_result_pyplot
 def parse_args():
