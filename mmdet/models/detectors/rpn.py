@@ -157,4 +157,5 @@ class RPN(BaseDetector):
             kwargs.pop('text_color', None)
             kwargs['colors'] = kwargs.pop('bbox_color', 'green')
         img = mmcv.imshow_bboxes(data, result, top_k=top_k, **kwargs)
+        print("??????")
         cv2.imwrite("{}/{}.jpg".format(out_dir, "test"), img)
