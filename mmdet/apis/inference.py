@@ -13,6 +13,7 @@ from mmdet.datasets import replace_ImageToTensor
 from mmdet.datasets.pipelines import Compose
 from mmdet.models import build_detector
 
+import cv2
 
 def init_detector(config, checkpoint=None, device='cuda:0', cfg_options=None):
     """Initialize a detector from config file.
@@ -228,9 +229,13 @@ def show_result_pyplot(model,
         wait_time (float): Value of waitKey param.
                 Default: 0.
     """
+
+    out_dir = "/home/xiaozeqi/mmdetection/result"
+
+
     if hasattr(model, 'module'):
         model = model.module
-    model.show_result(
+    img = model.show_result(
         img,
         result,
         score_thr=score_thr,
@@ -239,3 +244,5 @@ def show_result_pyplot(model,
         win_name=title,
         bbox_color=(72, 101, 241),
         text_color=(72, 101, 241))
+
+    cv2.imwrite("{}/{}.jpg".format(out_dir, "test"), img)
