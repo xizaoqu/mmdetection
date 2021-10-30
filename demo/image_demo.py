@@ -7,7 +7,8 @@ from argparse import ArgumentParser
 
 from mmdet.apis import (async_inference_detector, inference_detector,
                         init_detector)
-
+import os 
+os.path.append("../")
 from mmdet2.apis.inference import show_result_pyplot
 def parse_args():
     parser = ArgumentParser()
