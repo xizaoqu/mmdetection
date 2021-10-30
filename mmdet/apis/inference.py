@@ -230,7 +230,7 @@ def show_result_pyplot(model,
                 Default: 0.
     """
     out_dir = "/home/xiaozeqi/mmdetection/result"
-
+    print("sdfsdfs")
 
     if hasattr(model, 'module'):
         model = model.module
