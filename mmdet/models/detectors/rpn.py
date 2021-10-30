@@ -139,7 +139,7 @@ class RPN(BaseDetector):
                                                 flip_direction)
         return [proposal.cpu().numpy() for proposal in proposal_list]
 
-    def show_result(self, data, result, top_k=20, ss, **kwargs):
+    def show_result(self, data, result, ss, top_k=20,  **kwargs):
         """Show RPN proposals on the image.
 
         Args:
