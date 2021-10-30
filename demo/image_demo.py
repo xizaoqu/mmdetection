@@ -30,7 +30,6 @@ def main(args):
     result = inference_detector(model, args.img)
     # show the results
     show_result_pyplot(model, args.img, result, score_thr=args.score_thr)
-    print("main2")
 
 
 async def async_main(args):
@@ -44,7 +43,7 @@ async def async_main(args):
 
 
 if __name__ == '__main__':
-    print("main")
+
     args = parse_args()
     if args.async_test:
         asyncio.run(async_main(args))
