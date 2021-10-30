@@ -139,9 +139,8 @@ class RPN(BaseDetector):
                                                 flip_direction)
         return [proposal.cpu().numpy() for proposal in proposal_list]
 
-    def show_result(self, data, result, ss, top_k=20,  **kwargs):
+    def show_result(self, data, result, top_k=20,  **kwargs):
         """Show RPN proposals on the image.
-
         Args:
             data (str or np.ndarray): Image filename or loaded image.
             result (Tensor or tuple): The results to draw over `img`
