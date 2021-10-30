@@ -52,7 +52,7 @@ def init_detector(config, checkpoint=None, device='cuda:0', cfg_options=None):
     model.cfg = config  # save the config in the model for convenience
     model.to(device)
     model.eval()
-    return model,"sdfsgsfg"
+    return model
 
 
 class LoadImage:
