@@ -9,7 +9,8 @@ from mmdet.apis import (async_inference_detector, inference_detector,
                         init_detector)
 import sys 
 sys.path.append("../")
-from mmdet2.apis.inference import show_result_pyplot
+print(sys.path)
+from mmdet2.apis import show_result_pyplot
 def parse_args():
     parser = ArgumentParser()
     parser.add_argument('img', help='Image file')
