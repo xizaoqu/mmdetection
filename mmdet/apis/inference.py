@@ -244,5 +244,8 @@ def show_result_pyplot(model,
         win_name=title,
         bbox_color=(72, 101, 241),
         text_color=(72, 101, 241))
-
+    print("begin to write")
+    print(img)
     cv2.imwrite("{}/{}.jpg".format(out_dir, "test"), img)
+
+
