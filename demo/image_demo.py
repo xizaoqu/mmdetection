@@ -25,12 +25,11 @@ def parse_args():
 
 def main(args):
     # build the model from a config file and a checkpoint file
-    model,strr = init_detector(args.config, args.checkpoint, device=args.device)
-    print(strr)
+    model = init_detector(args.config, args.checkpoint, device=args.device)
     # test a single image
     result = inference_detector(model, args.img)
     # show the results
-    print("gogogo")
+
     show_result_pyplot(model, args.img, result, score_thr=args.score_thr)
     print("backbackback")
 
