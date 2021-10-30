@@ -5,12 +5,14 @@ from argparse import ArgumentParser
 # from mmdet.apis import (async_inference_detector, inference_detector,
 #                         init_detector, show_result_pyplot)
 
+sys.path.append("/home/xiaozeqi/mmdetection")
+print(sys.path)
+
 from mmdet.apis import (async_inference_detector, inference_detector,
                         init_detector)
 import sys 
-sys.path.append("/home/xiaozeqi/mmdetection")
-print(sys.path)
-from mmdet2.apis import show_result_pyplot
+
+
 def parse_args():
     parser = ArgumentParser()
     parser.add_argument('img', help='Image file')
