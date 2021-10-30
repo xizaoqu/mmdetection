@@ -234,6 +234,8 @@ def show_result_pyplot(model,
 
     if hasattr(model, 'module'):
         model = model.module
+    print(result)
+    print(img)
     img = model.show_result(
         img,
         result,
@@ -243,7 +245,7 @@ def show_result_pyplot(model,
         win_name=title,
         bbox_color=(72, 101, 241),
         text_color=(72, 101, 241))
-
+    print(img)
     cv2.imwrite("{}/{}.jpg".format(out_dir, "test"), img)
 
 
