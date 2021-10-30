@@ -2,10 +2,13 @@
 import asyncio
 from argparse import ArgumentParser
 
-from mmdet.apis import (async_inference_detector, inference_detector,
-                        init_detector, show_result_pyplot)
+# from mmdet.apis import (async_inference_detector, inference_detector,
+#                         init_detector, show_result_pyplot)
 
-from mmdet.apis.inference import *
+from mmdet.apis import (async_inference_detector, inference_detector,
+                        init_detector)
+
+from mmdet.apis.inference import show_result_pyplot
 def parse_args():
     parser = ArgumentParser()
     parser.add_argument('img', help='Image file')
