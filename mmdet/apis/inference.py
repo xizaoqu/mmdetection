@@ -234,8 +234,6 @@ def show_result_pyplot(model,
 
     if hasattr(model, 'module'):
         model = model.module
-    print(result)
-    print(img)
     model.show_result(
         img,
         result,

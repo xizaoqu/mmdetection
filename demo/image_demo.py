@@ -6,11 +6,13 @@ from argparse import ArgumentParser
 #                         init_detector, show_result_pyplot)
 
 sys.path.append("/home/xiaozeqi/mmdetection")
+
+import sys 
 print(sys.path)
 
 from mmdet.apis import (async_inference_detector, inference_detector,
                         init_detector)
-import sys 
+
 
 
 def parse_args():
