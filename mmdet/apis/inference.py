@@ -29,7 +29,6 @@ def init_detector(config, checkpoint=None, device='cuda:0', cfg_options=None):
     Returns:
         nn.Module: The constructed detector.
     """
-    "?!?!??#!?#?!#"
     if isinstance(config, str):
         config = mmcv.Config.fromfile(config)
     elif not isinstance(config, mmcv.Config):
@@ -53,7 +52,7 @@ def init_detector(config, checkpoint=None, device='cuda:0', cfg_options=None):
     model.cfg = config  # save the config in the model for convenience
     model.to(device)
     model.eval()
-    return model
+    return model,"sdfsgsfg"
 
 
 class LoadImage:
