@@ -8,7 +8,7 @@ from argparse import ArgumentParser
 from mmdet.apis import (async_inference_detector, inference_detector,
                         init_detector)
 import sys 
-sys.path.append("/home/xiaozeqi/mmdetection")
+sys.path.append("..")
 print(sys.path)
 from mmdet2.apis import show_result_pyplot
 def parse_args():
@@ -34,7 +34,7 @@ def main(args):
     # test a single image
     result = inference_detector(model, args.img)
     # show the results
-
+    print(args.img)
     show_result_pyplot(model, args.img, result, score_thr=args.score_thr)
     print("backbackback")
 
