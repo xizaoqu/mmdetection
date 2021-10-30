@@ -236,7 +236,7 @@ def show_result_pyplot(model,
         model = model.module
     print(result)
     print(img)
-    img = model.show_result(
+    model.show_result(
         img,
         result,
         score_thr=score_thr,
@@ -245,7 +245,6 @@ def show_result_pyplot(model,
         win_name=title,
         bbox_color=(72, 101, 241),
         text_color=(72, 101, 241))
-    print(img)
-    cv2.imwrite("{}/{}.jpg".format(out_dir, "test"), img)
+    
 
 
