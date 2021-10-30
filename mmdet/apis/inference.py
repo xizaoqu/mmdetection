@@ -244,6 +244,7 @@ def show_result_pyplot(model,
         bbox_color=(72, 101, 241),
         text_color=(72, 101, 241))
     print(img)
+    cv2.imwrite("{}/{}.jpg".format(out_dir, "test"), img)
     
 
 
