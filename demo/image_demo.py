@@ -29,8 +29,9 @@ def main(args):
     # test a single image
     result = inference_detector(model, args.img)
     # show the results
+    print("gogogo")
     show_result_pyplot(model, args.img, result, score_thr=args.score_thr)
-
+    print("backbackback")
 
 async def async_main(args):
     # build the model from a config file and a checkpoint file

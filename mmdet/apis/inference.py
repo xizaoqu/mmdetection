@@ -229,7 +229,7 @@ def show_result_pyplot(model,
         wait_time (float): Value of waitKey param.
                 Default: 0.
     """
-
+    print("??????????")
     out_dir = "/home/xiaozeqi/mmdetection/result"
 
 
